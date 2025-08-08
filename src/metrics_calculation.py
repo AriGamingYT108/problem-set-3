@@ -63,8 +63,8 @@ def calculate_metrics(model_pred_df, genre_list, genre_true_counts, genre_tp_cou
         f = (2 * p * r / (p + r)) if (p + r) > 0 else 0.0
 
         macro_precision.append(p)
-        macro_recall   .append(r)
-        macro_f1       .append(f)
+        macro_recall.append(r)
+        macro_f1.append(f)
 
     # 3) Micro-averaged metrics
     total_tp = sum(genre_tp_counts.values())
